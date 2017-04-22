@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@drawable/click_mail_item"
+    android:id="@+id/layout_main"
+    >
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/puzzle"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:id="@+id/temp3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/img"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/project"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="腾讯新闻"
+                android:layout_toRightOf="@+id/point"
+                android:layout_marginLeft="3dp"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"/>
+
+            <ImageView
+                android:id="@+id/point"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:padding="3dp"
+                android:src="@drawable/point2"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="全新体验，手机也能玩转邮箱"
+            android:singleLine="true"
+            android:layout_gravity="center_vertical"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="中国LOL首次获得世界联赛冠军"
+            android:singleLine="true"
+            android:textSize="12sp"
+            android:textColor="@color/smallgray"
+            android:layout_gravity="center_vertical"
+            android:layout_below="@+id/chat_name"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.01dp"
+            android:layout_weight="0"
+            android:background="@color/smallgray"
+            android:layout_alignParentBottom="true"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/has_file"
+            android:padding="5dp"
+            android:layout_marginBottom="8dp"
+            />
+
+        <TextView
+            android:id="@+id/chat_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="昨天"
+            android:textSize="12sp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/smallgray"
+            android:layout_gravity="center_vertical"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
